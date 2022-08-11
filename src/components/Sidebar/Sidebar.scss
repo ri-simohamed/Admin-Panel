@@ -2,7 +2,8 @@
     flex: 1;
     border-right: 0.5px solid rgb(168, 166, 166);
     min-height: 100vh;
-    background-color: #fff;
+    color: #555;
+    background-color: antiquewhite;
 
     .top{
         height: 50px;
@@ -30,9 +31,9 @@
             padding: 0;
 
             .title{
-                font-size: 10px;
+                font-size: 13px;
                 font-weight: bold;
-                color: #999;
+                color: #dc143c;
                 margin-top: 15px;
                 margin-bottom: 5px;
             }
@@ -43,19 +44,20 @@
                 cursor: pointer;
 
                 &:hover{
-                    background-color: antiquewhite;
+                    background-color: darksalmon;
                 }
                 
                 .icon{
-                    font-size: 18px;
-                    color: #6439ff;
+                    font-size: 20px;
+                    color: rgb(92, 119, 110);
                 }
 
                 span{
-                    font-size: 14px;
+                    font-size: 17px;
                     font-weight: 600;
-                    color: #999;
+                    color: #111;
                     margin-left: 10px;
+                    margin: 25px;
                 }
             }
         }

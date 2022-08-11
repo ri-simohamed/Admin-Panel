@@ -3,10 +3,8 @@ import './Navbar.scss';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
-import FullscreenExitOutlinedIcon from '@mui/icons-material/FullscreenExitOutlined';
-import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
-import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
+import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { DarkModeContext } from '../../context/darkModeContext';
 
 function Navbar() {
@@ -23,31 +21,19 @@ function Navbar() {
         <div className='items'>
           <div className='item'>
              <LanguageOutlinedIcon className='icon'/>
-             Englich
+             <span className='icon'>Englech</span>
           </div>
           <div className='item'>
           <DarkModeOutlinedIcon className='icon' onClick={()=> dispatch({type:"TOGGLE"})}/>
           </div>
           <div className='item'>
-          <FullscreenExitOutlinedIcon className='icon'/>
+          <ProductionQuantityLimitsIcon className='icon'/>
+            <span className='icon'>Products</span>
           </div>
           <div className='item'>
-          <NotificationsNoneOutlinedIcon className='icon'/>
+          <AddShoppingCartIcon className='icon'/>
+          <span className='icon'>Cart</span>
             <div className='num'>9+</div>
-          </div>
-          <div className='item'>
-          <ChatBubbleOutlineOutlinedIcon className='icon'/>
-             <div className='num'>4</div>
-          </div>
-          <div className='item'>
-          <ListOutlinedIcon className='icon'/>
-          </div>
-          <div className='item'>
-          <img
-              src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              alt=""
-              className="avatar"
-            />
           </div>
         </div>
       </div>
